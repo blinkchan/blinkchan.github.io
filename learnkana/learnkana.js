@@ -388,7 +388,7 @@ $(document).ready(function(){
       // (title = "",jpFullName = "", enFullName = "", color = "#FFFFFF", hiragana = [], katakana = [], image = "")
       //console.log(currentCharacter.image);
       $('[data-toggle="popover"]').popover({
-        placement : 'top',
+        //placement : 'top',
         trigger : 'focus',
         html : true,
         content : () => `<div class="text-center">
