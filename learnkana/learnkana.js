@@ -1,5 +1,6 @@
 let hiraganaObject = {};
 let katakanaObject = {};
+// https://github.com/blinkchan/Japanese-Syllables-in-JSON
 let RomajiToHiragana = {
   "a": "あ",
   "i": "い",
@@ -256,7 +257,7 @@ class Character {
 }
 
 // Hololive Members
-// Hololive Members
+// images are from hololive fandom wiki https://virtualyoutuber.fandom.com/wiki/Hololive
 let Hololive = {
 	"Hololive" : new Character("Hololive","ホロライブ", "Hololive", "#44C3F2", [], [HO,RO,RA,I,BU],
                          "https://vignette.wikia.nocookie.net/virtualyoutuber/images/f/fc/Hololive_production_Logo.png/revision/latest/scale-to-width-down/300?cb=20200519001500"),
@@ -355,27 +356,29 @@ let Hololive = {
 
 var currentCharacter;
 
+// https://learn.jquery.com/using-jquery-core/document-ready/
 $(document).ready(function(){
 
   $('[data-toggle="popover"]').focusin(() => {
     let characterTitle;
-    let char = event.target.id;
+    let char = event.target.id; // https://api.jquery.com/category/events/event-object/
+	  
+    // use '#' in id to distinguish hiragana and katakana
     if(char[0] == '#'){
       characterTitle = randomProperty(katakanaObject[char.substr(1)]);
     }else{
       characterTitle = randomProperty(hiraganaObject[char]);
     }
 
-    //console.log(characterTitle);
+    
     if(characterTitle != undefined && characterTitle != null){
       currentCharacter = Hololive[characterTitle];
     }else{
       currentCharacter = undefined;
     }
-    //console.log(currentCharacter.title);
-    //console.log(randomProperty(hiraganaObject[char]));
+    //console.log(characterTitle);
+    //console.log(currentCharacter);
     if(currentCharacter != undefined && currentCharacter != null){
-      //console.log(currentCharacter);
 
       for(let h of currentCharacter.hiragana){
         document.getElementById(h).style.background =  currentCharacter.color;
@@ -386,25 +389,21 @@ $(document).ready(function(){
         document.getElementById('#'+k).style.color =  "#000000";
       }
       // (title = "",jpFullName = "", enFullName = "", color = "#FFFFFF", hiragana = [], katakana = [], image = "")
-      //console.log(currentCharacter.image);
+	    
       $('[data-toggle="popover"]').popover({
         //placement : 'top',
         trigger : 'focus',
         html : true,
+	// the content won't update if not using function here
         content : () => `<div class="text-center">
-<img width="140" src="${currentCharacter.image}" class="img-fluid alt="Character Image">
-
-
-<h4>${currentCharacter.jpFullName}<br /> ${currentCharacter.enFullName}</h4>
-
-</div>`
-      }); 
-    }
-
-  });
+		<img width="140" src="${currentCharacter.image}" class="img-fluid alt="Character Image">
+		<h4>${currentCharacter.jpFullName}<br /> ${currentCharacter.enFullName}</h4>
+		</div>`
+      }); // popover
+    } // if(characterTitle != undefined && characterTitle != null)
+  }); // focusin
 
   $('[data-toggle="popover"]').focusout( () => {
-
     if(currentCharacter != undefined  && currentCharacter!= null){
       for(let h of currentCharacter.hiragana){
         document.getElementById(h).style.background =  "#6C757D";
@@ -418,9 +417,6 @@ $(document).ready(function(){
     }
     currentCharacter = undefined;
   });
-
-  //document.getElementById("a").style.background = "#FD8E5E";
-
 });
 
 var randomProperty = function (obj) {
