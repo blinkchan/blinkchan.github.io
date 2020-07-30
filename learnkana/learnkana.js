@@ -258,6 +258,8 @@ class Character {
 // Hololive Members
 // Hololive Members
 let Hololive = {
+	"Hololive" : new Character("Hololive","ホロライブ", "Hololive", "#44C3F2", [], [HO,RO,RA,I,BU],
+                         "https://vignette.wikia.nocookie.net/virtualyoutuber/images/f/fc/Hololive_production_Logo.png/revision/latest/scale-to-width-down/300?cb=20200519001500"),
   "Sora" : new Character("Sora","ときのそら", "Tokino Sora", "#5860FF", [TO, KI, NO, SO, RA], [],
                          "https://vignette.wikia.nocookie.net/virtualyoutuber/images/4/4b/Tokino_Sora_-_Profile_Picture.jpg/revision/latest/scale-to-width-down/165?cb=20200516161325"
                         ),
@@ -363,18 +365,18 @@ $(document).ready(function(){
     }else{
       characterTitle = randomProperty(hiraganaObject[char]);
     }
-    
+
     //console.log(characterTitle);
     if(characterTitle != undefined && characterTitle != null){
-        currentCharacter = Hololive[characterTitle];
-      }else{
-        currentCharacter = undefined;
-      }
+      currentCharacter = Hololive[characterTitle];
+    }else{
+      currentCharacter = undefined;
+    }
     //console.log(currentCharacter.title);
     //console.log(randomProperty(hiraganaObject[char]));
     if(currentCharacter != undefined && currentCharacter != null){
-    //console.log(currentCharacter);
-   
+      //console.log(currentCharacter);
+
       for(let h of currentCharacter.hiragana){
         document.getElementById(h).style.background =  currentCharacter.color;
         document.getElementById(h).style.color =  "#000000";
@@ -384,50 +386,50 @@ $(document).ready(function(){
         document.getElementById('#'+k).style.color =  "#000000";
       }
       // (title = "",jpFullName = "", enFullName = "", color = "#FFFFFF", hiragana = [], katakana = [], image = "")
-  //console.log(currentCharacter.image);
-                $('[data-toggle="popover"]').popover({
-                  placement : 'top',
-                  trigger : 'focus',
-                  html : true,
-                  content : () => `<div class="text-center">
-          <img width="140" src="${currentCharacter.image}" class="img-fluid alt="Character Image">
-          
-          
-          <h4>${currentCharacter.jpFullName}<br /> ${currentCharacter.enFullName}</h4>
-          
-          </div>`
-                }); 
+      //console.log(currentCharacter.image);
+      $('[data-toggle="popover"]').popover({
+        placement : 'top',
+        trigger : 'focus',
+        html : true,
+        content : () => `<div class="text-center">
+<img width="140" src="${currentCharacter.image}" class="img-fluid alt="Character Image">
+
+
+<h4>${currentCharacter.jpFullName}<br /> ${currentCharacter.enFullName}</h4>
+
+</div>`
+      }); 
     }
-    
-    });
-    
-    $('[data-toggle="popover"]').focusout( () => {
-
-      if(currentCharacter != undefined  && currentCharacter!= null){
-        for(let h of currentCharacter.hiragana){
-          document.getElementById(h).style.background =  "#6C757D";
-          document.getElementById(h).style.color =  "#FFFFFF";
-        }
-        for(let k of currentCharacter.katakana){
-          document.getElementById('#'+k).style.background =  "#6C757D";
-          document.getElementById('#'+k).style.color =  "#FFFFFF";
-
-        }
-      }
-      currentCharacter = undefined;
-    });
-
-    //document.getElementById("a").style.background = "#FD8E5E";
 
   });
 
-  var randomProperty = function (obj) {
-  	if(obj == undefined || obj == null) return undefined;
-    if(Object.keys(obj).length == 0){
-      return undefined;
-    }else{
-      var keys = Object.keys(obj);
-      //console.log(keys);
-      return obj[keys[ keys.length * Math.random() << 0]];
+  $('[data-toggle="popover"]').focusout( () => {
+
+    if(currentCharacter != undefined  && currentCharacter!= null){
+      for(let h of currentCharacter.hiragana){
+        document.getElementById(h).style.background =  "#6C757D";
+        document.getElementById(h).style.color =  "#FFFFFF";
+      }
+      for(let k of currentCharacter.katakana){
+        document.getElementById('#'+k).style.background =  "#6C757D";
+        document.getElementById('#'+k).style.color =  "#FFFFFF";
+
+      }
     }
-  };
+    currentCharacter = undefined;
+  });
+
+  //document.getElementById("a").style.background = "#FD8E5E";
+
+});
+
+var randomProperty = function (obj) {
+  if(obj == undefined || obj == null) return undefined;
+  if(Object.keys(obj).length == 0){
+    return undefined;
+  }else{
+    var keys = Object.keys(obj);
+    //console.log(keys);
+    return obj[keys[ keys.length * Math.random() << 0]];
+  }
+};
