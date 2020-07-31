@@ -1,6 +1,6 @@
 import RomajiToHiragana from './util/romaji-to-hiragana.js'
 import RomajiToKatakana from './util/romaji-to-katakana.js'
-import {hiraganaObject, katakanaObject} from 'characterData.js'
+import {hiraganaObject, katakanaObject} from './characterdata.js'
 
 const A = 'a', I = 'i', U = 'u', E = 'e', O = 'o',
       KA = 'ka', KI = 'ki', KU = 'ku', KE = 'ke', KO = 'ko',
