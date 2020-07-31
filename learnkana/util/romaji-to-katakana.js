@@ -1,5 +1,5 @@
 // https://github.com/blinkchan/Japanese-Syllables-in-JSON
-export default let RomajiToKatakana = {
+let RomajiToKatakana = {
     "a": "ア",
     "i": "イ",
     "u": "ウ",
@@ -103,3 +103,4 @@ export default let RomajiToKatakana = {
     "wo": "ヲ",
     "n": "ン"
   }
+export {RomajiToKatakana}
