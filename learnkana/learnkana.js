@@ -2,23 +2,6 @@ import {RomajiToHiragana} from './util/romaji-to-hiragana.js'
 import {RomajiToKatakana} from './util/romaji-to-katakana.js'
 import {hiraganaObject, katakanaObject, Hololive} from './characterdata.js'
 
-const A = 'a', I = 'i', U = 'u', E = 'e', O = 'o',
-      KA = 'ka', KI = 'ki', KU = 'ku', KE = 'ke', KO = 'ko',
-      SA = 'sa', SHI = 'shi', SU = 'su', SE = 'se', SO = 'so',
-      TA = 'ta', CHI = 'chi', TSU = 'tsu', TE = 'te', TO = 'to',
-      NA = 'na', NI = 'ni', NU = 'nu', NE = 'ne', NO = 'no',
-      HA = 'ha', HI = 'hi', FU = 'fu', HE = 'he', HO = 'ho',
-      MA = 'ma', MI = 'mi', MU = 'mu', ME = 'me', MO = 'mo',
-      YA = 'ya', YU = 'yu', YO = 'yo',
-      RA = 'ra', RI = 'ri', RU = 'ru', RE = 're', RO = 'ro',
-      WA = 'wa', WO = 'wo',
-      N = 'n',
-      GA = 'ga', GI = 'gi', GU = 'gu', GE = 'ge', GO = 'go',
-      ZA = 'za', ZI = 'ji', ZU = 'zu', ZE = 'ze', ZO = 'zo',
-      DA = 'da', DI = 'di', DU = 'du', DE = 'de', DO = 'do',
-      BA = 'ba', BI = 'bi', BU = 'bu', BE = 'be', BO = 'bo',
-      PA = 'pa', PI = 'pi', PU = 'pu', PE = 'pe', PO = 'po';
-
 var currentCharacter;
 
 // https://learn.jquery.com/using-jquery-core/document-ready/
