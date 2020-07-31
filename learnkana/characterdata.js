@@ -147,4 +147,4 @@ class Character {
   };
 
 
-export {hiraganaObject,katakanaObject}
+export {hiraganaObject,katakanaObject, Hololive}
