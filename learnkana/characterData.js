@@ -95,7 +95,7 @@ class Character {
                            ),
   
     // 3rd generation
-    "Pekora" : new Character("Pekora","兎田ぺこら", "Usada Pekora", "#D3DEF4", [PE, KO, RA], [],
+    "Pekora" : new Character("Pekora","兎田ぺこら", "Usada Pekora", "#D3DEF4", [PE, KO, RA], [PE],
                              "https://vignette.wikia.nocookie.net/virtualyoutuber/images/9/95/Usada_Pekora_-_Portrait.png/revision/latest/scale-to-width-down/310?cb=20190821034245"
                             ),
     "Rushia" : new Character("Rushia","潤羽るしあ", "Uruha Rushia", "#70D0B5", [RU, SHI, A], [],
