@@ -1,5 +1,5 @@
 // https://github.com/blinkchan/Japanese-Syllables-in-JSON
-export default let RomajiToHiragana = {
+let RomajiToHiragana = {
     "a": "あ",
     "i": "い",
     "u": "う",
@@ -103,3 +103,4 @@ export default let RomajiToHiragana = {
     "wo": "を",
     "n": "ん"
   }
+export {RomajiToHiragana}
