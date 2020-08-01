@@ -30,11 +30,11 @@ $(document).ready(function(){
 
       for(let h of currentCharacter.hiragana){
         document.getElementById(h).style.background =  currentCharacter.color;
-        document.getElementById(h).style.color =  "#000000";
+        if(isLight(currentCharacter.color)) document.getElementById(h).style.color =  "#000000";
       }
       for(let k of currentCharacter.katakana){
         document.getElementById('#'+k).style.background =  currentCharacter.color;
-        document.getElementById('#'+k).style.color =  "#000000";
+        if(isLight(currentCharacter.color)) document.getElementById('#'+k).style.color =  "#000000";
       }
       // (title = "",jpFullName = "", enFullName = "", color = "#FFFFFF", hiragana = [], katakana = [], image = "")
 	    
@@ -72,3 +72,20 @@ var randomProperty = function (obj) {
   let keys = Object.keys(obj);
   return obj[keys[ keys.length * Math.random() << 0]];
 };
+
+function isLight(color){
+  let c = color.substring(1);      // strip #
+  let rgb = parseInt(c, 16);   // convert rrggbb to decimal
+  let r = (rgb >> 16) & 0xff;  // extract red
+  let g = (rgb >>  8) & 0xff;  // extract green
+  let b = (rgb >>  0) & 0xff;  // extract blue
+
+  let luma = 0.2126 * r + 0.7152 * g + 0.0722 * b; // per ITU-R BT.709
+
+  if (luma < 40) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
