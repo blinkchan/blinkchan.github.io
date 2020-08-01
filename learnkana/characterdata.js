@@ -51,8 +51,11 @@ class Character {
   // Hololive Members
   // images are from hololive fandom wiki https://virtualyoutuber.fandom.com/wiki/Hololive
   let Hololive = {
-      "Hololive" : new Character("Hololive","ホロライブ", "Hololive", "#44C3F2", [], [HO,RO,RA,I,BU],
+    "VTuber" : new Character("VTuber","ブイチューバー", "VTuber (buichūbā)", "#44C3F2", [], [BU,I,CHI,YU,BA],
                            "https://vignette.wikia.nocookie.net/virtualyoutuber/images/f/fc/Hololive_production_Logo.png/revision/latest/scale-to-width-down/300?cb=20200519001500"),
+      "Hololive" : new Character("Hololive","ホロライブ-プロダクション", "Hololive Production", "#44C3F2", [], [HO,RO,RA,I,BU,PU,RO,DA,KU,SHI,YO,N],
+                           "https://vignette.wikia.nocookie.net/virtualyoutuber/images/f/fc/Hololive_production_Logo.png/revision/latest/scale-to-width-down/300?cb=20200519001500"),
+
     "Sora" : new Character("Sora","ときのそら", "Tokino Sora", "#5860FF", [TO, KI, NO, SO, RA], [],
                            "https://vignette.wikia.nocookie.net/virtualyoutuber/images/4/4b/Tokino_Sora_-_Profile_Picture.jpg/revision/latest/scale-to-width-down/165?cb=20200516161325"
                           ),
