@@ -65,7 +65,7 @@ class Character {
     "Miko" : new Character("Miko","さくらみこ", "Sakura Miko", "#F17176",[SA, KU, RA, MI,KO], [],
                            "https://vignette.wikia.nocookie.net/virtualyoutuber/images/5/54/Sakura_Miko_-_Profile_Picture.jpg/revision/latest/scale-to-width-down/165?cb=20200516171312"
                           ),
-    "Suisei" : new Character("Suisei","星街すいせい", "Hoshimachi Suisei", "#A9CBF0", [SU, I, SE], [],
+    "Suisei" : new Character("Suisei","星街すいせい", "Hoshimati Suisei", "#A9CBF0", [SU, I, SE], [],
                              "https://vignette.wikia.nocookie.net/virtualyoutuber/images/1/16/Hoshimachi_Suisei_-_Profile_Picture.jpg/revision/latest/scale-to-width-down/165?cb=20200516161514"
                             ),
   
@@ -146,7 +146,26 @@ class Character {
                           ),
     "Luna" : new Character("Luna","姫森ルーナ", "Himemori Luna", "#FBAEDA", [], [RU,NA],
                            "https://vignette.wikia.nocookie.net/virtualyoutuber/images/2/22/Himemori_Luna_-_Portrait.png/revision/latest/scale-to-width-down/310?cb=20200126200041"
-                          )
+                          ),
+    "Doris" : new Character("Doris","ドリス", "Doris", "#E7EEFE", [], [DO,RI,SU],
+      "https://vignette.wikia.nocookie.net/virtualyoutuber/images/a/aa/Doris_-_Portrait.png/revision/latest/scale-to-width-down/310?cb=20200515132603"
+    ),
+    "Artia" : new Character("Artia","アティア", "Artia", "#7B7192", [], [A,TE,I],
+      "https://vignette.wikia.nocookie.net/virtualyoutuber/images/d/d6/Artia_-_Portrait.png/revision/latest/scale-to-width-down/310?cb=20200428064857"
+    ),
+    "Rosalyn" : new Character("Rosalyn","ロサリン", "Rosalyn", "#B1DBF1", [], [RO,SA,RI,N],
+      "https://vignette.wikia.nocookie.net/virtualyoutuber/images/b/b2/Rosalyn_-_Portrait.png/revision/latest/scale-to-width-down/310?cb=20200517145422"
+    ),
+      "Risu" : new Character("Risu","アユンダ・リス", "Ayunda Risu", "#F6BBBD", [], [A,YU,N,DA,RI,SU],
+      "https://vignette.wikia.nocookie.net/virtualyoutuber/images/d/de/Ayunda_Risu_-_Portrait.png/revision/latest/scale-to-width-down/310?cb=20200427142410"
+    ),
+    "Moona" : new Character("Moona","ムーナ・ホシノヴァ", "Moona Hoshinova", "#B1A0DF", [], [MU,NA,HO,SHI,NO,A],
+      "https://vignette.wikia.nocookie.net/virtualyoutuber/images/d/de/Ayunda_Risu_-_Portrait.png/revision/latest/scale-to-width-down/310?cb=20200427142410"
+    ),
+    "Lofi" : new Character("Lofi","(アイラニ・イオフィフティーン", "Airani Iofifteen", "#B1A0DF", [], [A,I,RA,NI,O,RE,TE,N],
+      "https://vignette.wikia.nocookie.net/virtualyoutuber/images/c/cb/Airani_Iofifteen_-_Portrait.png/revision/latest/scale-to-width-down/310?cb=20200427135833"
+    ),
+                          
   };
 
 
