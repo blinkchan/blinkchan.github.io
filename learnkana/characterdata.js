@@ -147,6 +147,24 @@ class Character {
     "Luna" : new Character("Luna","姫森ルーナ", "Himemori Luna", "#FBAEDA", [], [RU,NA],
                            "https://vignette.wikia.nocookie.net/virtualyoutuber/images/2/22/Himemori_Luna_-_Portrait.png/revision/latest/scale-to-width-down/310?cb=20200126200041"
                           ),
+    // 5th generation
+        "Lamy" : new Character("Lamy","雪花ラミィ", "Yukihana Lamy", "#6CCDF8", [], [RA,MI,I],
+                           "https://pbs.twimg.com/media/EetmHIgUEAASdMu?format=png&name=900x900"
+                          ),
+        "Nene" : new Character("Nene","桃鈴ねね", "Momosuzu Nene", "#FFB65D", [NE], [],
+                           "https://pbs.twimg.com/profile_images/1291195680497704960/UUQJVLad_400x400.jpg"
+                          ),
+        "Botan" : new Character("Botan","獅白ぼたん", "Shishiro Botan", "#E2D4D3", [BO,TA,N], [],
+                           "https://pbs.twimg.com/profile_images/1291177730608750594/GAF3wmss_400x400.jpg"
+                          ),
+        "Aloe" : new Character("Aloe","魔乃アロエ", "Mano Aloe", "#F38CC4", [], [A,LO,E],
+                           "https://pbs.twimg.com/profile_images/1291179044487102465/I4Oimz-e_400x400.jpg"
+                          ),
+        "Polka" : new Character("Polka","尾丸ポルカ", "Omaru Polka", "#CF2830", [], [PO,RU,KA],
+                           "https://pbs.twimg.com/profile_images/1291176527497818115/T-BjSU25_400x400.jpg"
+                          ),
+        
+    // Hololive CN
     "Doris" : new Character("Doris","ドリス", "Doris", "#E7EEFE", [], [DO,RI,SU],
       "https://vignette.wikia.nocookie.net/virtualyoutuber/images/a/aa/Doris_-_Portrait.png/revision/latest/scale-to-width-down/310?cb=20200515132603"
     ),
@@ -156,12 +174,12 @@ class Character {
     "Rosalyn" : new Character("Rosalyn","ロサリン", "Rosalyn", "#B1DBF1", [], [RO,SA,RI,N],
       "https://vignette.wikia.nocookie.net/virtualyoutuber/images/b/b2/Rosalyn_-_Portrait.png/revision/latest/scale-to-width-down/310?cb=20200517145422"
     ),
-      "Risu" : new Character("Risu","アユンダ・リス", "Ayunda Risu", "#F6BBBD", [], [A,YU,N,DA,RI,SU],
+    // Hololive ID
+    "Risu" : new Character("Risu","アユンダ・リス", "Ayunda Risu", "#F6BBBD", [], [A,YU,N,DA,RI,SU],
       "https://vignette.wikia.nocookie.net/virtualyoutuber/images/d/de/Ayunda_Risu_-_Portrait.png/revision/latest/scale-to-width-down/310?cb=20200427142410"
     ),
     "Moona" : new Character("Moona","ムーナ・ホシノヴァ", "Moona Hoshinova", "#B1A0DF", [], [MU,NA,HO,SHI,NO,A],
      "https://vignette.wikia.nocookie.net/virtualyoutuber/images/9/94/Moona_Hoshinova_Portrait.jpg/revision/latest?cb=20200411161426"
-     // "https://vignette.wikia.nocookie.net/virtualyoutuber/images/d/de/Ayunda_Risu_-_Portrait.png/revision/latest/scal"
     ),
     "Lofi" : new Character("Lofi","(アイラニ・イオフィフティーン", "Airani Iofifteen", "#B1A0DF", [], [A,I,RA,NI,O,RE,TE,N],
       "https://vignette.wikia.nocookie.net/virtualyoutuber/images/c/cb/Airani_Iofifteen_-_Portrait.png/revision/latest/scale-to-width-down/310?cb=20200427135833"
