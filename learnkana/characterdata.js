@@ -160,7 +160,8 @@ class Character {
       "https://vignette.wikia.nocookie.net/virtualyoutuber/images/d/de/Ayunda_Risu_-_Portrait.png/revision/latest/scale-to-width-down/310?cb=20200427142410"
     ),
     "Moona" : new Character("Moona","ムーナ・ホシノヴァ", "Moona Hoshinova", "#B1A0DF", [], [MU,NA,HO,SHI,NO,A],
-      "https://vignette.wikia.nocookie.net/virtualyoutuber/images/d/de/Ayunda_Risu_-_Portrait.png/revision/latest/scale-to-width-down/310?cb=20200427142410"
+     "https://vignette.wikia.nocookie.net/virtualyoutuber/images/9/94/Moona_Hoshinova_Portrait.jpg/revision/latest?cb=20200411161426"
+     // "https://vignette.wikia.nocookie.net/virtualyoutuber/images/d/de/Ayunda_Risu_-_Portrait.png/revision/latest/scal"
     ),
     "Lofi" : new Character("Lofi","(アイラニ・イオフィフティーン", "Airani Iofifteen", "#B1A0DF", [], [A,I,RA,NI,O,RE,TE,N],
       "https://vignette.wikia.nocookie.net/virtualyoutuber/images/c/cb/Airani_Iofifteen_-_Portrait.png/revision/latest/scale-to-width-down/310?cb=20200427135833"
