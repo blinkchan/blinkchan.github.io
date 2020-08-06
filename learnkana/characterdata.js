@@ -157,7 +157,7 @@ class Character {
         "Botan" : new Character("Botan","獅白ぼたん", "Shishiro Botan", "#E2D4D3", [BO,TA,N], [],
                            "https://pbs.twimg.com/profile_images/1291177730608750594/GAF3wmss_400x400.jpg"
                           ),
-        "Aloe" : new Character("Aloe","魔乃アロエ", "Mano Aloe", "#F38CC4", [], [A,LO,E],
+        "Aloe" : new Character("Aloe","魔乃アロエ", "Mano Aloe", "#F38CC4", [], [A,RO,E],
                            "https://pbs.twimg.com/profile_images/1291179044487102465/I4Oimz-e_400x400.jpg"
                           ),
         "Polka" : new Character("Polka","尾丸ポルカ", "Omaru Polka", "#CF2830", [], [PO,RU,KA],
