@@ -65,7 +65,7 @@ class Character {
     "Miko" : new Character("Miko","さくらみこ", "Sakura Miko", "#F17176",[SA, KU, RA, MI,KO], [],
                            "https://vignette.wikia.nocookie.net/virtualyoutuber/images/5/54/Sakura_Miko_-_Profile_Picture.jpg/revision/latest/scale-to-width-down/165?cb=20200516171312"
                           ),
-    "Suisei" : new Character("Suisei","星街すいせい", "Hoshimati Suisei", "#A9CBF0", [SU, I, SE], [],
+    "Suisei" : new Character("Suisei","星街すいせい", "Hoshimachi Suisei", "#A9CBF0", [SU, I, SE], [],
                              "https://vignette.wikia.nocookie.net/virtualyoutuber/images/1/16/Hoshimachi_Suisei_-_Profile_Picture.jpg/revision/latest/scale-to-width-down/165?cb=20200516161514"
                             ),
   
