@@ -1,8 +1,3 @@
-// object that store {kana : character}
-// e.g. hiraganaObject = {"pe" : "Pekora", "shi" : "Rushia"};
-let hiraganaObject = {};
-let katakanaObject = {};
-
 const A = 'a', I = 'i', U = 'u', E = 'e', O = 'o',
       KA = 'ka', KI = 'ki', KU = 'ku', KE = 'ke', KO = 'ko',
       SA = 'sa', SHI = 'shi', SU = 'su', SE = 'se', SO = 'so',
@@ -19,6 +14,11 @@ const A = 'a', I = 'i', U = 'u', E = 'e', O = 'o',
       DA = 'da', DI = 'di', DU = 'du', DE = 'de', DO = 'do',
       BA = 'ba', BI = 'bi', BU = 'bu', BE = 'be', BO = 'bo',
       PA = 'pa', PI = 'pi', PU = 'pu', PE = 'pe', PO = 'po';
+
+// object that store {kana : character}
+// e.g. hiraganaObject = {"pe" : "Pekora", "shi" : "Rushia"};
+let hiraganaObject = {};
+let katakanaObject = {};
 
 class Character {
     constructor(title = "",jpFullName = "", enFullName = "", color = "#FFFFFF", hiragana = [], katakana = [], image = "") {
